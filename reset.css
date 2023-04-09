@@ -1,0 +1,747 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  
+  
+  body {
+      background: linear-gradient(-45deg, #2c7ae0, #146ab1, #0d56b6, #000000);
+      background-size: 400% 400%;
+      animation: gradient 8s ease infinite;
+  
+    
+    height: 100vh;
+    width: 100vw;
+    color: white;
+   overflow-x: hidden;
+   
+  
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+    font-size: 1rem;
+  
+  
+  
+     /* background-color: #000000;
+    color: #fff; */
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  
+  
+  
+   :root{
+    --text-color:#dddbdb;
+    --background:rgba(8,131,191);
+    --title-color:rgba(0, 26, 173, 0.795);
+    
+   }
+  /* Header */
+   #Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);;
+    padding: 20px 0 20px 0;
+   align-items: center;
+   vertical-align: top;
+  
+   
+  }
+  
+  #Header .logo{
+    margin-top: 0rem;
+    background: -webkit-linear-gradient(45deg,#08daff, #2600ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins",sans-serif;
+  }
+  
+  #btn-mobile{
+    display: none;
+  }
+  
+  #Header nav  {
+    justify-content: space-between;
+  }
+  
+  
+   
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: auto 20px;
+  }
+  
+  li{
+    display: inline-flex;
+   
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+    
+  }
+  
+  
+    #Header nav ul li a ion-icon {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      margin-top: .25rem;
+      height: 1.25rem;
+    }
+  
+  
+  #Header > nav ul .under-1, .under-2, .under-3, .under-4, .under-5 {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    align-self: center;
+  }
+  
+  
+  .under-1::before {
+    content: "";
+    position: absolute;
+   
+    bottom: 1rem;
+    width: 5rem;
+    height: 2px;
+    background-color: rgba(2, 126, 163, 0.548);
+    transform: scaleX(0);
+    transform-origin:left center;
+    transition: transform 0.3s ease;
+  }
+  
+  .under-1:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .under-2::before {
+    content: "";
+    position: absolute;
+  
+    bottom: 1rem;
+    width: 4.5rem;
+    height: 2px;
+    background-color: rgb(0, 87, 158);
+    transform: scaleX(0);
+    transform-origin:left center;
+    transition: transform 0.3s ease;
+  }
+  
+  .under-2:hover::before {
+    transform: scaleX(1);
+  }
+  
+  
+  
+  
+  .under-3::before {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    width: 7rem;
+    height: 2px;
+    background-color: rgb(58, 24, 209);
+    transform: scaleX(0);
+    transform-origin:left center;
+    transition: transform 0.3s ease;
+  }
+  
+  .under-3:hover::before {
+    transform: scaleX(1);
+  }
+  
+  
+  .under-4::before {
+    content: "";
+    position: absolute;
+   
+    bottom: 1rem;
+    width: 4.5rem;
+    height: 2px;
+    background-color: rgba(2, 126, 163, 0.548);
+    transform: scaleX(0);
+    transform-origin:left center;
+    transition: transform 0.3s ease;
+  }
+  
+  .under-4:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .under-5::before {
+    content: "";
+    position: absolute;
+   
+    bottom: 1rem;
+    width: 3rem;
+    height: 2px;
+    background-color: rgba(2, 126, 163, 0.548);
+    transform: scaleX(0);
+    transform-origin:left center;
+    transition: transform 0.3s ease;
+  }
+  
+  .under-5:hover::before {
+    transform: scaleX(1);
+  }
+  
+  
+  
+  nav .header-list {
+    margin: 5px 0 0 0 ;
+  }
+  
+  
+  
+  /* Sobre nós */
+  
+  #Sobre {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #Sobre .sobre{
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  .about{
+    margin: 1rem 0 1rem 0;
+    text-align: left;
+    width: 50vw;
+     border: 1px solid ;
+    padding: 2rem;
+    font-family: "Open Sans", sans-serif;
+    border-radius:.25rem 0 .25rem 0 ;
+    font-size: large;
+  }
+  
+  .divider{
+  margin-top:5rem ;
+  border-top:1px solid #fff;
+  height: 0;
+  width: 100%;
+  }
+  
+  /* Serviços */
+  
+  
+  .container-2 {
+    margin-top: 8rem;
+  
+  }
+  
+  
+  .container-2 h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  
+  
+  .suporte, .redes, .sistemas{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    margin: auto ;
+  }
+  
+  
+  
+   #Serviços  h3{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 30vw;
+    
+  } 
+  
+  .suporte, .redes, .sistemas > p{
+  text-align: center;
+  margin-bottom: 8rem;
+  font-family: "Montserrat";
+  font-size: large;
+  }
+  
+  
+    
+  #Serviços, #Seviços .suporte{
+    display: inline;
+  }
+    
+  
+  #Serviços ion-icon{
+    margin: 2rem auto ;
+    font-size: 2rem;
+    display: flex;
+  }
+  
+    
+  .build {
+    border-radius: 50%;
+    padding: 1rem;
+  
+  color: #000;
+  background: #fff;
+    transition: color 0.6s ease;
+    transition: background 0.6s ease;
+  }
+  
+  .build:hover{
+  color: #fff;
+  background: #000;
+  } 
+  
+  
+  
+   .planet{
+    border-radius: 50%;
+    padding: 1rem;
+    
+  color: #000;
+  background: #fff;
+    transition: color 0.6s ease;
+    transition: background 0.6s ease;
+  }
+  
+  .planet:hover{
+    color: #11a0ff;
+  background: #000;
+  }
+  
+  
+  .code{
+    border-radius: 50%;
+    padding: 1rem;
+    
+  color: #000;
+  background: #fff;
+    transition: color 0.6s ease;
+    transition: background 0.6s ease;
+  }
+  
+  .code:hover{
+    color: #00f715;
+  background: #000;
+  }
+  
+  
+  
+  
+  .cont{
+    text-align: center;
+    margin: 10rem auto 0 auto;
+  }
+                    
+  
+           
+  .btn-grad {
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    margin: auto;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.7s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    width: 10%;
+    text-decoration: none;
+  
+    margin-bottom: 2rem
+  }
+  
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  #Contato .container-3 > .button  {
+    width: 12rem;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: 4rem auto;
+    
+  }
+  
+   
+  .contact{
+    margin: 0 10px 0 0 ;;
+  
+    padding: 5px;
+  } 
+  
+  .conte{
+    display: flex;
+    justify-content: center;
+    max-width: 40vw;
+    margin: 2rem auto 10rem auto;
+    padding: 3rem;
+    border: 1px solid;
+    border-radius: .25rem;
+  
+  }
+  
+  .social-links {
+    display: flex;
+   
+    justify-content: center;
+  align-items: center;
+  
+  margin-bottom: 8rem;
+   }
+  
+   .social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 100%;
+  transition: background .6s;
+   }
+  
+   .social-links a:hover{
+    background: rgba(19, 206, 212, 0.2);
+   }
+  
+  footer{
+    padding: 24px 0;
+    text-align: center;
+    font-weight: 500
+  }
+  
+    footer a  {
+    text-decoration: none;
+    color: white;
+    
+   }
+  
+  @media only screen and (max-width:1761px) {
+    body{
+      width: 100%;
+      height: 100%;
+    }
+    
+  
+   .conte{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+   }
+  
+   .container-2{
+  width: 100%;
+  
+  
+    vertical-align: top;
+    display: inline-block;
+  }
+  
+  .suporte , .redes , .sistemas {
+  
+    margin: auto auto auto auto;
+    width: 33%;
+  }
+  
+  #Contato .container-3 > .button  {
+    
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: 4rem auto;
+  
+    }
+  
+  }
+  
+  
+  @media only screen and (max-width:600px) {
+    body{
+      height: 100%;
+      width: 100%;
+  
+    }
+  
+    li{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    
+    }
+  
+    #Header  ul li, .logo {
+      align-items: center;
+      display: flex;
+    }
+  
+    
+    nav ul{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 0;
+   height: 0px;
+    background: #fff;
+    transition: .6s;
+    z-index: 1;
+    color: white; 
+    visibility: hidden; 
+    overflow-y: hidden;
+  }
+   
+  nav.active ul{
+  visibility: visible;
+  overflow-y: hidden;
+
+  height: 100vh;
+  
+  }
+  
+  nav.active ul li a{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 10%;
+    overflow-y: hidden;
+  
+  }
+  
+  #Header nav.active a{
+    color: #000;
+    
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto 0 auto;
+    padding: 4rem 0;
+    width: 30%;
+    border-bottom: 2px solid #e7e7e7;
+  overflow-y: hidden;
+
+    
+  } 
+  
+    #Header{
+      
+      font-size: 12px;
+    }
+  
+    #btn-mobile{
+      display: flex;
+      padding: .5rem 1rem;
+      border: none;
+      border-radius: .25rem;
+      background: none;
+      cursor: pointer;
+      gap: .5rem;
+      font-family: "Poppins";
+      align-items: center;
+      width: max-content;
+    }
+  
+   #hamburguer{
+    border-top: 2px solid currentColor;
+    width: 20px;
+  }
+  
+  #hamburguer::after, #hamburguer::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 4px;
+    background: currentColor;
+   transition:  .3s ease;
+   position: relative; 
+   
+  }
+  
+  nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  
+  nav.active #hamburguer::before{
+  transform: rotate(135deg);
+  border-top-color: #000;
+  }
+  nav.active #hamburguer::after
+  {
+    transform: rotate(-135deg);
+    top: -6px;
+  }
+  
+  
+   .conte{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   }
+  
+   .suporte, .redes, .sistemas{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 30vw;
+    margin: auto;
+  }
+  
+  .suporte , .redes , .sistemas {
+    margin: auto;
+    width: 100%;
+  }
+  
+  #Contato .container-3 > .button  {
+    
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: 4rem auto;
+    
+  }
+  
+  .build {
+    border-radius: 50%;
+    padding: 1rem;
+  
+  color: #fff;
+  background: #000;
+  
+  }
+  
+  
+  
+  .planet{
+    border-radius: 50%;
+    padding: 1rem;
+    
+  color: #11a0ff;
+  background: #000;
+  
+  }
+  
+  .code{
+  
+      border-radius: 50%;
+      padding: 1rem;
+      
+    color: #19ff11;
+    background: #000;
+  
+  
+  }
+  
+  .about{
+    margin: auto;
+    text-align: left;
+    width: 90vw;
+     border: 1px solid ;
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    border-radius:.25rem 0 .25rem 0 ;
+    word-break:break-all;
+    word-wrap: break-word;
+    word-spacing: 1.2px;
+  }
+  
+  @media  only screen and (max-width:350px) {
+    #Contato .container-3 > .button  {
+      width: 10rem;
+      justify-content: center;
+      display: flex;
+      text-align: center;
+      margin: 4rem auto;
+      
+    }
+  
+    
+  
+  body{
+    background: linear-gradient(-45deg, #0f0f0f, #30254e, #271746, #4205a5);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+  }
+  
+  @media only screen and (max-width:1375px) {
+    .suporte, .redes, .sistemas{
+      display:block;
+    margin: auto;
+    width: 30%;
+    }
+  }
+  }
+  
+  @media only screen and (max-width:834px) {
+  
+    
+   .suporte, .redes, .sistemas{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+  }
+  
+  .suporte , .redes , .sistemas {
+    margin: auto;
+    width: 100%;
+  }
+    
+  }
